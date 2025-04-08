@@ -1,0 +1,65 @@
+# Process Design Document (PDD)
+
+## Project Name:
+TestWhiz - Employee Management System
+
+## Document Version:
+1.0
+
+## Author:
+[Your Name]
+
+## Date:
+[Insert Date]
+
+---
+
+### 1. Business Process Overview
+The Employee Management System allows users to manage employee data, including adding new employees, viewing the employee list, and verifying the presence of employee details.
+
+---
+
+### 2. Automated Process Description
+#### Test Case 1: Add Employee and Verify Employee List
+- **Objective:** Automate the process of adding a new employee and verifying that the employee appears in the employee list.
+- **Steps:**
+  1. Navigate to the Employee Management System (`http://localhost:4200/employees`).
+  2. Click on the "Employee List" link.
+  3. Click on the "Add Employee" link.
+  4. Fill in the employee details:
+     - First Name: `sajid`
+     - Last Name: `khan`
+     - Email ID: `sajid@gmail.com`
+  5. Submit the form.
+  6. Navigate back to the "Employee List" page.
+  7. Verify that the employee details (First Name, Last Name, Email ID) are displayed in the employee list.
+
+#### Test Case 2: Verify Employee List is Displayed
+- **Objective:** Verify that the employee list is displayed on the Employee Management System.
+- **Steps:**
+  1. Navigate to the Employee Management System (`http://localhost:4200/employees`).
+  2. Verify that the "Employee List" text is visible on the page.
+
+---
+
+### 3. Expected Outcomes
+- **Test Case 1:** The new employee (`sajid khan`) is successfully added and displayed in the employee list.
+- **Test Case 2:** The "Employee List" is visible on the page.
+
+---
+
+### 4. Assumptions
+- The Employee Management System is accessible at `http://localhost:4200/employees`.
+- The application is pre-configured with the necessary roles and permissions.
+
+---
+
+### 5. Limitations
+- The tests are specific to the Employee Management System and may not cover other modules.
+- The tests assume that the application is running locally.
+
+---
+
+### 6. References
+- Playwright Test Automation Framework
+- Employee Management System Requirements Document
